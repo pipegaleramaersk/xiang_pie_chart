@@ -7,9 +7,9 @@ import streamlit as st
 st.set_page_config(layout="wide")
 st.title('Nested Pie Chart')
 
+overall_engagement = st.selectbox('Top number', range(0.1,1,0.01))
+maersk_engagement = st.selectbox('Top number', range(0.1,1,0.01))
 
-overall_engagement = 0.91
-maersk_engagement = 0.52
 
 def pie_chart(overall_engagement, maersk_engagement):
        fig, ax = plt.subplots(figsize=(5, 5),dpi=150)
@@ -67,5 +67,3 @@ def pie_chart(overall_engagement, maersk_engagement):
 
 
 fig = pie_chart(overall_engagement=0.50, maersk_engagement=0.56)
-
-st.pyplot(fig)
