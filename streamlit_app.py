@@ -66,4 +66,4 @@ def pie_chart(overall_engagement, maersk_engagement):
        #plt.savefig(fname='test.png')
 
 
-fig = pie_chart(overall_engagement=0.50, maersk_engagement=0.56)
+fig = pie_chart(overall_engagement=overall_engagement, maersk_engagement=maersk_engagement)
