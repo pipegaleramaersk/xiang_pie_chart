@@ -34,10 +34,6 @@ def pie_chart(overall_engagement, maersk_engagement):
        ax.pie(inner_vals, radius=1.8-size, colors=inner_colors,
               wedgeprops=dict(width=size, edgecolor='w', linewidth= 0), startangle=270)
 
-       """
-       ax.pie([0.25, 0.75], radius=1.8-size*2, colors= ["red", "#fbfbfb"],
-              wedgeprops=dict(width=size, edgecolor='w', linewidth= 0), startangle=270)
-       """
 
        ### Annotations
        Xstart, Xend = ax.get_xlim()
