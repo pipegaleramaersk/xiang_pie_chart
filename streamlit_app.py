@@ -4,6 +4,10 @@ import matplotlib.pyplot as plt
 import streamlit as st
 
 
+st.set_page_config(layout="wide")
+st.title('Nested Pie Chart')
+
+
 overall_engagement = 0.91
 maersk_engagement = 0.52
 
@@ -59,6 +63,9 @@ def pie_chart(overall_engagement, maersk_engagement):
        ax.set()
        fig.tight_layout()
 
-       plt.savefig(fname='test.png')
+       #plt.savefig(fname='test.png')
 
-pie_chart(overall_engagement=0.50, maersk_engagement=0.56)
+
+fig = pie_chart(overall_engagement=0.50, maersk_engagement=0.56)
+
+st.pyplot(fig)
