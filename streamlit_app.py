@@ -9,12 +9,13 @@ st.title('Nested Pie Chart')
 st.set_option('deprecation.showPyplotGlobalUse', False)
 
 
-options = list(range(1,100,1))
-overall_engagement_selected = st.sidebar.slider("Outer line:", 1, 0, 100)
-maersk_engagement_selected = st.sidebar.slider("Inner line:", 1, 0, 100)
-width = st.sidebar.slider("plot width", 1, 25, 3)
-height = st.sidebar.slider("plot height", 1, 25, 1)
-number_size = st.sidebar.slider("Numbers size", 0, 100, 1)
+overall_engagement_selected = st.sidebar.slider("Outer line:", 1, 0, value=75)
+maersk_engagement_selected = st.sidebar.slider("Inner line:", 1, 0, value=50)
+
+width = st.sidebar.slider("plot width", 1, 25, value=10)
+height = st.sidebar.slider("plot height", 1, 25, value=10)
+
+number_size = st.sidebar.slider("Numbers size", 0, 100, value=10)
 
 def pie_chart(overall_engagement, maersk_engagement):
     
