@@ -102,8 +102,6 @@ def pie_chart_2(outer_line, inner_line):
         ax.set()
         #fig.tight_layout()
 
-fig = pie_chart_2(outer_line=outer_line_selected_2, inner_line=inner_line_selected_2)
-
-
+fig_2 = pie_chart_2(outer_line=outer_line_selected_2, inner_line=inner_line_selected_2)
 
 st.pyplot(fig_2)
