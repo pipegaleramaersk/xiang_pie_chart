@@ -9,11 +9,11 @@ st.title('Nested Donut Chart')
 st.set_option('deprecation.showPyplotGlobalUse', False)
 
 
-outer_line_selected = st.sidebar.slider("Outer line, first chart:", 0.0, 1.0, step=0.01, value=0.75)
-inner_line_selected = st.sidebar.slider("Inner line, first :", 0.0, 1.0, step=0.01, value=0.5)
+outer_line_selected = st.sidebar.slider("First Donut char: Outer line", 0.0, 1.0, step=0.01, value=0.75)
+inner_line_selected = st.sidebar.slider("First Donut char: Inner line", 0.0, 1.0, step=0.01, value=0.5)
 
-outer_line_selected_2 = st.sidebar.slider("Outer line, first chart:", 0.0, 5.0, step=0.01, value=3.5)
-inner_line_selected_2 = st.sidebar.slider("Inner line, first :", 0.0, 5.0, step=0.01, value=2.6)
+outer_line_selected_2 = st.sidebar.slider("Second Donut char: Outer line", 0.0, 5.0, step=0.01, value=3.5)
+inner_line_selected_2 = st.sidebar.slider("Second Donut char: Inner line", 0.0, 5.0, step=0.01, value=2.6)
 
 
 width = st.sidebar.slider("Plot width", 1, 25, value=10)
